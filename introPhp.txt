@@ -1,0 +1,62 @@
+WTF es MVC
+	Modelo, Vista, Controlador
+		Un patrón de diseño que nos permite estructurar un determinado proyecto
+		para mayor organización.
+			Modelo -> Hace referencia a la plantilla del back con relación
+					a nuestra estructura de datos de nuestro BD.
+
+				
+					Haciendo referencia a nuestras tablas
+
+
+			Vista -> Se encarga de manejar todas las interfaces gráficas que verá
+				nuestro usuario.
+
+			Controlador -> Es el puente entre la BD y las vista (Rutas, funciones, querys)
+					El usuario desde la vista (formulario) envía los datos.
+					Estos datos llegan primero al controlador, el controlador
+					verifica con el modelo que los datos enviados por el usuario
+					coincidan con la estructura de la tabla en nuestra BD.
+					Si esto es correcto, se envían los datos a guardarse en la BD,
+					si no, el controlador devuelve a la vista un mensaje de error.	
+
+
+WTF es POO -> Programación Orientada a Objetos
+	Reflejo en codificación de objetos o sucesos de la vida cotidiana.
+	Ideal para el modelado de datos y procesos.
+	POO es una arquitectura de datos.
+		POO tiene clases, métodos y parámetros (atributos).
+			donde un objeto es una clase -> Persona
+					class Persona
+			parámetros (atributos) -> las caractéristicas de esa Persona
+			métodos -> las acciones de esa persona
+
+
+			class Persona{
+				public $nombre; // variables públicas
+				public $apellido;
+
+				public function __constructor($nombre, $apellido){
+					// El constructor es el inicializador de las caracteristicas (atributos)
+					// de la clase
+					$this->nombre = $nombre;
+					$this->apellido = $apellido;
+
+				}
+
+				// Un método es una función que solo puede hacer el objeto o clase
+				public function saludar(){
+					echo "Hola, soy " . $this->nombre . " y me dicen el 'apodo' "
+				}
+			}
+
+		// Instancia
+		$persona = new Persona('Kamilo', 'Munevar')   // fecha = new Date();
+		$persona->saludar();		// fecha.getHours();
+
+		alert();
+		prompt();
+
+		window.alert(); // window = new Window()
+
+
